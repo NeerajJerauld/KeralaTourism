@@ -45,7 +45,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="navbar-collapse collapse " id="bdNavbar">
+          <div class="navbar-collapse collapse" id="bdNavbar">
             <ul
               class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0"
             >
@@ -133,41 +133,76 @@
 
       <div class="row bgcolorBlue justify-content-center mb-1 rounded">
         <div class="col-12 px-5">
-          <form class="row g-1 mt-4">
+          <form class="row g-1 mt-4" action="../KeralaTourism/login.html" onsubmit="return signUpValidate()">
             <div class="col-12">
               <label for="inputUsername4" class="form-label">Username</label>
-              <input
-                type="username"
-                class="form-control rounded-3"
-                id="inputUsername4"
-              />
+              <div class=" d-flex">
+                <input
+                  type="username"
+                  class=" form-control rounded-3"
+                  id="inputUsername4"
+                />
+              </div>
             </div>
             <!-- END OF USERNAME INPUT -->
 
             <div class="col-12">
+              <label for="inputPhone4" class="form-label">Phone Number</label>
+              <div class="d-flex">
+                <input
+                  type="tel"
+                  class="form-control rounded-3"
+                  id="inputPhone4"
+                />
+              </div>
+            </div>
+
+            <!-- END OF PHONE INPUT -->
+            <div class="col-12">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control rounded-3"
-                id="inputEmail4"
-              />
+              <div class="d-flex">
+                <input
+                  type="email"
+                  class="form-control rounded-3"
+                  id="inputEmail4"
+                />
+              </div>
             </div>
             <!-- END OF EMAIL INPUT -->
 
-            <div class="col-12 mb-3">
-              <div class="d-flex justify-content-between">
+            <div class="col-12">
+              <!-- <div class="d-flex justify-content-between"> -->
                 <label for="inputPassword4" class="form-label">Password</label>
+              <!-- </div> -->
+              <div class="d-flex mb-2">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="inputPassword4"
+                />
               </div>
-              <input
-                type="password"
-                class="form-control col-12 rounded-3"
-                id="inputPassword4"
-              />
+              <div class="col-11 progress" id="progress" hidden= true>
+                <div  class='progress-bar bg-success' role='progressbar' style='width: 10%' aria-valuenow='10' aria-valuemin='0' aria-valuemax='100'></div>
+              </div>
             </div>
             <!-- END OF PASSWORD INPUT -->
-
+            <div class="col-12 mb-3">
+              <div class="d-flex justify-content-between">
+                <label for="inputRePassword4" class="form-label"
+                  >Retype Password</label
+                >
+              </div>
+              <div class="d-flex">
+                <input
+                  type="password"
+                  class="form-control rounded-3"
+                  id="inputRePassword4"
+                />
+              </div>
+            </div>
+            <!-- END OF Retype PASSWORD INPUT -->
             <div class="col-12">
-              <p class="small">
+              <p class="small" id="commonErr">
                 Make sure it's at least 15 characters OR at least 8 characters
                 including a number and a lowercase letter.
                 <a href="#" class="text-decoration-none">Learn more</a>.
@@ -179,6 +214,7 @@
               <button
                 type="submit"
                 class="btn btn-outline-primary mx-auto w-100 rounded-pill"
+                
               >
                 Create account
               </button>
@@ -186,7 +222,7 @@
             <!-- END OF SUBMIT BUTTON -->
             <hr />
             <div class="col-12">
-              <p class="small">
+              <p class="small" id="commonErr">
                 By an account, you agree to the Terms of Service. For more
                 information about Kerala Tourism Org's privacy practices, see
                 the
@@ -226,5 +262,6 @@
       <!-- END OF TERMS AND POLICY -->
     </div>
     <!-- END OF CONTAINER -->
+    <script src="../KeralaTourism/signup.js"></script>
   </body>
 </html>
