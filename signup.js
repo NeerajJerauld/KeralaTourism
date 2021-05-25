@@ -2,7 +2,7 @@ mydata = [
   {
     username: "Neeraj",
     email: "maverick.neeraj@gmail.com",
-    password: "maverick",
+    password: "12345",
   },
 ];
 
